@@ -49,7 +49,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: tanzukr.azurecr.io/tanzu-application-platform/supply-chain/hello-spring-prod-default@sha256:908cee49f1d06de80f05fb8039f8cc7945ed1606b32149f9534265754d684013
+        image: tanzukr.azurecr.io/tanzu-application-platform/supply-chain/hello-spring-prod-default@sha256:135e2a209d49f46ca1a06682a4ae840d003f21c888c8a8008568ef73a6efd841
         livenessProbe:
           httpGet:
             path: /livez
